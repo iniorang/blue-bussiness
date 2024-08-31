@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+:root {
+    --color1: #7C93C3;
+    --color2: #55679C;
+    --color3: #1E2A5E;
+    --color4: #1E2A5E;
+}
+
+/* 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+// <width>: Use a value from 75 to 100
+.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" <width>;
+}
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color1);
+}
+
+h1 {
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4em;
+}
+
+img{
+    width: auto;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+}
+
+header>h1 {
+    border-bottom: 5px solid #1E2A5E;
+    padding: 0px 50px;
+}
+
+/* Navigation Bar */
+nav {
+    top: 0;
+    padding: 5vh;
+    background: var(--color3);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 5dvw;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: 400;
+}
+
+button {
+    padding: 5px;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.button-1 {
+    background-color: var(--color1);
+    color: whitesmoke;
+}
+
+.button-2 {
+    background-color: var(--color3);
+    color: whitesmoke;
+}
+
+/* End Of Navigation */
+/* Body */
+.container{
+    padding: 0px 80px;
+}
+
+/* Hero */
+.hero-container {
+    background-color: var(--color2);
+    padding: 60px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.hero-header {
+    /* text-wrap: balance; */
+    grid-area: hero-header;
+    color: beige;
+    line-height: 1.111;
+    column-gap: 15%;
+}
+
+.hero-img {
+    grid-area: hero-img;
+}
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.hero-cta>div {
+    flex: 1;
+}
+
+/* End of Hero */
+
+/* Body */
+
+/* Short About */
+.short-us{
+    text-align: center;
+    color: whitesmoke;
+    padding: 0px 80px;
+}
+
+.short-us > img{
+    width: 100%;
+    height: 50dvh;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+/* End of About */
+
+/* End of Body */
+/* Footer */
+footer {
+    background-color: var(--color3);
+}
+
+/* End of Footer */
+/* End of Body */
